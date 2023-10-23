@@ -1,0 +1,414 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Libre Franklin";
+}
+a{
+	color:#fff;
+	text-align: center;
+}
+img {
+	display: block;
+	width: 100%;
+}
+
+ul, ol {
+	list-style-type: none;
+}
+.header-block {
+	height: 100vh;
+	position: relative;
+	background: url('../images/main-bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.header-block header {
+	position: relative;
+	z-index: 10;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(198, 108, 73, 0.30);
+}
+
+header .content-wrap .logo {
+	order: 2;
+}
+
+.icons {
+	color: #fff;
+}
+
+.logo {
+	font-size: 2.5rem;
+	color: #fff;
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+
+}
+.menu-list li:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.menu-list a {
+	font-size: 2rem;
+	color: white;
+	text-decoration: none;
+}
+
+
+/*Global styles*/
+.content-wrap {
+	padding: 15px 20px 0px 20px;
+	max-width: 1100px;
+	margin: 0 auto;
+	align-items: center;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.hide {
+	display: none;
+}
+
+.hide-menu {
+	position: absolute;
+	left: -9999px;
+}
+.text-box{
+	text-align: center;
+	font-size: 2rem;
+	color:#fff;
+	display: inline;
+	position: relative;
+}
+.main-text{
+	padding-top:20vh;
+	width: 100%;
+	font-size: 2.5rem;
+	text-align: center;
+}
+.second-text{
+	padding-top: 1.5rem;
+	font-size: 1.2rem;
+	color: white;
+}
+.latest{
+	font-size: 2rem;
+	padding-top: 50vh;
+	width: 100%;
+	text-align: center;	
+	font-style: italic;
+	color:black;
+}
+.latestButton{
+	padding-top: 20vh;
+	position: relative;
+}
+.title-text{
+	padding-top:2vh;
+	font-size: 2.5rem;
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+}
+.colored{
+	background-color: #fffaf2;
+}
+.default-text{
+	padding: 1vh 3vw;
+	font-size: 1.5rem;
+	text-align: justify;
+}
+.self-content{
+	width: 100%;
+}
+.self-image{
+	margin: 0 auto;	
+	width: 60vw;
+	height: 60vh;
+	background: url('../images/self-image.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.list-bars-container{
+	width: 60%;
+	justify-content: center;
+	margin: 0px 20%;
+	display: flex;
+}
+.skills-list li p{
+	font-size: 1rem;
+	padding: 20px 20px 20px 0px;
+}
+.bars-tools li p{
+	padding: 20px 0px;
+}
+.progress-bar{
+	padding: 0px 0px;
+	margin: 13px 0px;
+	width: 100%;
+	background-color: #f5d6ab;
+}
+.progress{
+	padding: 13px 0px;
+	background-color: #c66c49;
+	height: 100%;
+	width: 15%;
+}
+.progressFirst{
+	padding: 13px 0px;
+	background-color: #c66c49;
+	height: 100%;
+	width: 25%;
+}
+.progressSecond{
+	padding: 13px 0px;
+	background-color: #c66c49;
+	height: 100%;
+	width: 45%;
+}
+.portfolio{
+	background-color:  #f5d6ab;
+	margin: 0 auto;
+	width: 93vw;
+	height: 20vh;
+	align-items: center;
+	position: relative;
+	display:flex;
+	flex-direction: column;	
+}
+.portfolio p{
+	text-align: center;
+	font-size: 3rem;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.portfolio a{
+	color:black;
+	font-size: 1.5rem;
+	width: 80%;
+	text-align: center;
+}
+.Sources{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 50%;
+	width: 100%;
+	color:#000;
+	z-index: 10;
+}
+.top-blocks{
+	display:flex;
+}
+.Sources ul{
+	width: 70%;
+	margin-right: 2%;
+}
+.Sources li{
+	margin:5vh 0px;
+	margin-left: 5vw;
+}
+.Sources li a{
+	text-decoration: none;
+	margin-bottom: 20px;
+	color:#000;
+}
+.fa-chevron-up{
+	width: 100%;
+	text-align: right;
+}
+.bottom-footer{
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 1.5rem;
+	max-width: 1100px;
+}
+.contact-box{
+	width: 90%;
+	margin-left: 5vw;
+	font-size: 16px;
+	display: flex;
+	flex-direction: column;
+}
+.contact-box a{
+	text-align: left;
+	text-decoration: none;
+}
+.bottom-footer a{
+	color:#000;
+	text-align: right;
+	margin-left: 90%;
+}
+@media screen and (min-width: 800px) {
+	header .content-wrap .logo {
+		order: 0;
+	}
+	.icons {
+		display: none;
+	}
+	.hide-menu {
+		position: static;
+	}
+	.menu-list {
+		background: transparent;
+	}
+	ul , ol	{
+		display: flex;
+	}
+	li{
+		padding:20px 20px 0px 20px;
+	}
+	.main-menu{
+		text-align: right;
+	}
+	.main-menu a {
+		font-size: 1.5rem;
+		color: white;
+	}
+	.menu-list li:not(:last-child) {
+		margin-bottom: 20px;
+	}
+	.logo{
+		font-size: 3rem;
+		width: 50%;
+		text-align: left;
+	}
+	.main-text{
+		text-align: left;
+		width: 90%;
+		max-width: 1100px;
+		padding-top: 25vh;
+		padding-left:20px;
+		font-size:5rem;
+	}
+	.second-text{
+		width: 90%;
+		max-width: 1100px;
+		padding-left:20px;
+		font-size:2rem;
+		text-align: left;
+	}
+	.latest{
+		font-size: 2rem;
+		padding-top: 30vh;
+		text-align: bottom;
+	}
+	.title-text{
+		width: 90%;
+		max-width: 1100px;
+		text-align: left;
+		padding-left: 20px;
+	}
+	.self-content{
+		width: 100%;
+		display: flex;
+		padding: 1vh 3vw;
+	}
+	.self-image{
+		margin: 0	0	0	0;
+		width: 25%;
+		height: 50vh;
+		background: url('../images/self-image1.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	.list-bars-container{
+		margin: 0 0 ;
+		width: 100%;
+		flex-direction: row;
+	}
+	.skills-list{
+		width: 30%;
+	}
+	.list-bars-container ul{
+		display: inline;
+	}
+	.skills-list li{
+		padding: 0px 0px;
+	}
+	.skills-list li p{
+		font-size: 1rem;
+		padding: 20px 20px 20px 0px;
+	}
+	.bars-tools li{
+		padding: 0px 50px 0px 0px;
+	}
+	.bars-tools li p{
+		padding: 20px 0px;
+	}
+	.progress-bar{
+		margin: 143x 0px;
+		width: 100%;
+		background-color: #f5d6ab;
+	}
+	.progress{
+		padding: 13px 0px;
+		background-color: #c66c49;
+		height: 100%;
+		width: 50%;
+	}
+	.progressFirst{
+		padding: 13px 0px;
+		background-color: #c66c49;
+		height: 100%;
+		width: 80%;
+	}
+	.progressSecond{
+		padding: 13px 0px;
+		background-color: #c66c49;
+		height: 100%;
+		width: 20%;
+	}
+	.Sources{
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		flex-direction: row;
+	}
+	.top-blocks{
+		width: 65%;
+	}
+	.contact-box{
+		width: 25%;
+		margin-top: 20px;
+		font-size: 1.5rem;
+	}
+	.Sources ul{
+		width: 50%;
+		text-align: left;
+		display: inline;
+	}
+	.Sources li{
+		display: list-item;
+		margin: 0;
+		font-size: 1.5rem;
+	}
+	.bottom-footer{
+		width: 95%;
+	}
+	.bottom-footer i{
+		color:#000;
+		font-size: 2rem;
+		width: 100%;
+		max-width: 1100px;
+		justify-content: space-around;
+	}
+}
